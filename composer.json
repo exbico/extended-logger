@@ -1,0 +1,36 @@
+{
+  "name": "exbico/extended-logger",
+  "description": "Extended logger",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/exbico/extended-logger",
+  "keywords": ["Logger"],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.0",
+    "psr/log": "^1.0|^2.0|^3.0"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.10",
+    "phpunit/phpunit": "^10.0",
+    "squizlabs/php_codesniffer": "^3.7"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Exbico\\ExtendedLogger\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Exbico\\ExtendedLogger\\Tests\\": "tests/"
+    }
+  }
+}

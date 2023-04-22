@@ -1,4 +1,4 @@
-name: PHP Composer
+name: CI
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
   build:
 
     runs-on: '${{ matrix.operating_system }}'
-    timeout-minutes: 20
+    timeout-minutes: 10
     strategy:
       matrix:
         operating_system: ['ubuntu-latest']
